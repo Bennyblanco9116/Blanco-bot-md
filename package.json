@@ -72,8 +72,8 @@
    },
    "repository": {
       "type": "git",
-      "url": "git+https://github.com/Bennyblanco9116/Blanco-Md.git"
+      "url": "git+https://github.com/Bennyblanco9116/Blanco-bot-md.git"
    },
-   "bugs": { "url": "https://github.com/Bennyblanco9116/Blanco-Md/issues" },
-   "homepage": "https://github.com/Bennyblanco9116/Blanco-Md#readme"
+   "bugs": { "url": "https://github.com/Bennyblanco9116/Blanco-bot-md/issues" },
+   "homepage": "https://github.com/Bennyblanco9116/Blanco-bot-md#readme"
 }
