@@ -1,16 +1,16 @@
 {
-   "name": "gifted-md",
-   "version": "1.2.5-beta",
-   "description": "Multi device whatsapp bot developed by GiftedTech.",
-   "main": "lib/client.js",
-   "type": "commonjs",
-   "engines" : { "node": "v18.16.0", "npm": "9.5.1" },
+   "name": "blanco-md",
+   "version": "2.5.0",
+   "description": "Multi device whatsapp bot by BlancoTech.",
+   "main": "lib/smd.js",
+   "type": "commonjs",  
    "scripts": {
-             "start": "pm2 start lib/client.js --deep-monitoring --attach --name Suhail",
-             "stop": "pm2 stop Suhail"             
+            "run": "pm2 start lib/smd.js --deep-monitoring --attach --name Gifted || node lib/smd.js",
+            "start": "pm2 start lib/smd.js --attach --name blanco || node lib/smd.js",
+            "stop": "pm2 stop Blanco",
+            "heroku-postbuild": "git clone https://github.com/mouricedevs/gifted-md.git temp1 && mv temp1/.git .git && rm -rf temp1"
    },
-   "keywords": ["whatsapp bot md","whatsapp bot","sc bot","sc wa bot","suhail md","suhail whatsapp bot","Suhail md bot","multidevice","baileys bot"],
-   "author": "GiftedTech",
+   "author": "BlancoTech",
    "license" :"Apache-2.0",
    "dependencies": { 
              "@adiwajshing/keyed-db": "^0.2.4",
@@ -58,21 +58,22 @@
              "util": "^0.12.4",
              "wa-sticker-formatter": "^4.3.2",
              "youtubei.js": "^7.0.0",
-             "ytdl-secktor": "^0.0.1-development"
+             "ytdl-secktor": "^0.0.1-development",
+             "link-preview-js": "^3.0.0"
    },
    "directories": {
-             "lib": "lib",
-             "assets": "temp"
+      "lib": "lib",
+      "assets": "lib/assets",
+      "plugins" :"plugins"
+
    },
    "devDependencies": {
-             "pino": "^7.0.5"
+      "pino": "^7.0.5"
    },
    "repository": {
-             "type": "git",
-             "url": "git+https://github.com/Giftedmaurice/gifted-bot-md.git"
+      "type": "git",
+      "url": "git+https://github.com/Bennyblanco9116/Blanco-Md.git"
    },
-   "bugs": {
-             "url": "https://github.com/Giftedmaurice/gifted-bot-md/issues"
-   },
-   "homepage": "https://github.com/Giftedmaurice/gifted-bot-md#readme"
+   "bugs": { "url": "https://github.com/Bennyblanco9116/Blanco-Md/issues" },
+   "homepage": "https://github.com/Bennyblanco9116/Blanco-Md#readme"
 }
